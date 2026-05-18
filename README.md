@@ -1,4 +1,4 @@
-# 🌡 Weather Dashobard
+# 🌡 Weather Dashboard
 A one-page website for daily weather updates based in the USA, using **React** as the <ins>Frontend</ins>, and a **Remote Public API** as the <ins>Data Grabber</ins>.  
 I built this project as a continuation of my Hands-On-Practice journey; in where I learned about more concepts that were ambigious to me revoloving around (API fetching, the correct way of handling errors and successes, smooth responsive design, and more...).  
 
@@ -15,26 +15,20 @@ Here is what Weather Dashboard has to offer for the user:
 - Responsive Design: The website works on any reolution of any device with no downgrades in functionality or smoothness.  
 
 ## 👨🏽‍🍳 The Process
-First, I started brainstorming and looking for aesthetically pleasing designs over the internet for similar applications. I started noting down noticable features that can a user go "Wow! This app looks good".  
-Next, I started gathering information on the pages required for a tourism application, for example, (Sign in page, Login page, Home, etc...)  
-Then, I started building the application page by page. I began designing the Authentication pages, which both looked very different from what they are right now. And just before moving on to design the next pages, I had to implement the functionality for the Authentication pages.  
-After that, I reached out for the Backend developer who coded the Database and made it data-ready for me, who gave me the required files for me to start implementing my features.  
-Next, I began repeating the same steps of building the screen then building the functionality. And sometimes it depends on how hard the functionality is, as some functioncalities were done before I designed the page for it for raw testing purposes without design standing in the way.  
-However, the application is not fully finished right now, as some functionalities are not present at the moment, and still under construction. But, I can say that it's 75% done and about to reach the finish line soon.  
+I took a deep dive into some of the projects that can be done by a front end React developer which showcase their abilities and improve them; as I was running out of ideas, and every other idea was a replica of the previous, and so I found this small project to work on!  
+While I was reading the description of the project and the should's and should'nt's, I started building the vision and the final experince in my head.  
+I went up to Google and searched for modern weather dashboard designs, since I was looking for the short route to immediately start programming, just as I came across an advanced weather dashboard Figma design, which has the same exact pallete and style I had envisioned for the website.  
+Afterwards, I got into the design and started extracting the values of the (weather cards, texts, and colors' HEXs) and transfered them directly into my IDE, where I will be applying them to my components and code.  
+The design wasn't hard to implement; but some overflow and responsiveness issues appeared nonetheless. Such as (The issue of the Square of Information overflowing out of the screen if the weather card's number is the first or last). That's when I enabled my searching and prompting senses and read a lot of StackOverflow users similar issues, which helped a lot in understanding these ambigious concepts.  
+In the process of making the page responsive, I realized that there exist a lot of resolutions and types of screens (The Square of Information issue mentioned above), where each one of them requires different display settings, which sparked "This is not very practical and scalable" idea in my head; as I was writing a lot of conditional media queries that won't work on the long run if the website ever decides to change the size of the weather cards; the thing that led me to know that there is an invention that helps with an issue like this called FloatingUI. However, I didn't use, since it's a small project.  
 
 ## 📚 What I Learned
-During the development of the application, I went through a lot of processes in learning the core functionalities that every application contains. And because my previous projects (which are not present in my GitHub account) were never as effecient as this one, they made me go through so many hard times to know how things are being connected and done.  
-### 🔐 Authentication:  
-In my previous projects, I have implemeneted authentication and user account system, but I have never dug deep into knowing how they work. It was more of a memorizing matter than a full understanding over it. I have got to know how to use them correctly, and what is the main purpose behind them.  
+During the development of the website, I went through a lot of hardships in API fetching. Although it's not my first time using the UseEffect or fetching from an API, but the concept is still a bit hard for me to implement without rewatching certain videos that can remind on the chain of thoughts I should have, or some crucial syntax conditions.  
+### 📌 Data Fetching from a Remote Public API:  
+It sounds easy, and is easy! I just haven't put my hands on this concept enough, which always gets me to forget how it all works out. But, I am now more familiar with UseEffect in React, and can confidently say that it is above 50% covered in my brain.  
 
-### 👨🏽‍💼 State Management:  
-Even though state management was something ambiguous for me in the past, right now, it's much more clearer, as I know what everything does, how the app communicated with other elements and how to implement it on my own.  
-
-### 🔗 API Backend fetches:  
-Becuase I never fully understood backend fetches and always were in a lost state because of it, this application has made get closer to every aspect in fetching from a database. I fully know and wrapped my head around the core facts and ideas for it.  
-
-### 🖼 Smooth, Modern Design:  
-Throughout my reserach for the best design and UIs for a user, I came across a lot of desgins that use Glass Effect to make it look better. And because I am freshman in the field of Flutter development, I didn't know how to achieve such thing, but with the correct searches, I was able to achieve that in my pages, such as, (Sign in, and Login).  
+### 🖌 Responsive Design Scalability:  
+I have done multiple reponsive pages throughout my programming journy, but this time was different as I used Pseudo Elements in CSS (after, and before), which added a lot of life and modernity to the final product. Plus, it tought how to make these elements reponsive in different environments.  
 
 ## 🏗 How Can It Be Improved?  
 - Adding a Light Theme, or a theme change when switching between daytime and nighttime forecasts.  
