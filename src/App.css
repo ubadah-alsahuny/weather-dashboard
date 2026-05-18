@@ -1,0 +1,235 @@
+.screenSettings {
+    width: 100%;
+    height: 100vh;
+    overflow: clip;
+    place-items: center;
+    place-content: center;
+}
+
+.titleBox{
+    background-color: #e5e5e5;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.loadingText {
+    margin-top: 1.5rem;
+
+    animation: loadingPulse 1.5s infinite linear;
+}
+
+.listStyle{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.weatherCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #1b1b1d;
+    border-radius: 1.875rem;
+    padding: 1.5rem;
+    width: 9rem;
+    height: 14.125rem;
+    place-items: center;
+    box-sizing: border-box;
+    position: relative;
+
+    border: 0 solid #e5e5e5;
+    transition: all 0.1s ease-in;
+}
+
+.weatherCard:hover {
+    cursor: pointer;
+    border: 0.25rem solid #e5e5e5;
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.07);
+}
+
+.weatherCard:hover::before {
+    z-index: 1;
+    content: ">>";
+    transform: rotateZ(45deg);
+    position: absolute;
+    background-color: #e5e5e5;
+    top: 104%;
+    border-radius: 0.25rem;
+}
+
+.weatherCard:hover::after {
+    z-index: 2;
+    width: 275%;
+    height: fit-content;
+    line-break: normal;
+    text-align: center;
+    content: attr(weather-data);
+    top: 106%;
+    color: #1b1b1d;
+    font-weight: 600;
+    position: absolute;
+    background-color: #e5e5e5;
+    padding: 0.5rem 1rem;
+    border-radius: 1.25rem;
+
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+}
+
+.controlButtons {
+    display: flex;
+    flex-direction: row;
+    place-self: center;
+    margin: 1.25rem 0;
+}
+
+.weatherCard:first-child:hover::after{
+    left: 0;
+    right: auto;
+    transform: none;
+}
+
+.weatherCard:last-child:hover::after{
+    left: auto;
+    right: 0;
+    transform: none;
+}
+
+@keyframes loadingPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+@media screen and (max-width: 1250px) {
+    .screenSettings {
+        overflow: auto;
+    }
+
+    .listStyle {
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1103px) {
+    .weatherCard:nth-child(6n):hover::after {
+        left: auto;
+        right: 0;
+        transform: none;
+    }
+
+    .weatherCard:last-child:hover::after{
+        left: auto;
+        right: auto;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 943px) {
+    .weatherCard:nth-child(5n):hover::after {
+        left: auto;
+        right: 0;
+        transform: none;
+    }
+
+    .weatherCard:last-child:hover::after, .weatherCard:nth-child(6n):hover::after{
+        left: auto;
+        right: auto;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 943px) {
+    .weatherCard:nth-child(4n):hover::after, .weatherCard:last-child:hover::after {
+        left: auto;
+        right: 0;
+        transform: none;
+    }
+
+    .weatherCard:nth-child(5n):hover::after{
+        left: 0;
+        right: auto;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 623px) {
+    .weatherCard:nth-child(3n + 3):hover::after {
+        left: auto;
+        right: 0;
+        transform: none;
+    }
+
+    .weatherCard:nth-child(3n + 1):hover::after {
+        left: 0;
+        right: auto;
+        transform: none;
+    }
+
+    .weatherCard:nth-child(7):hover::after{
+        left: auto;
+        right: auto;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 463px) {
+    .weatherCard:hover::after{
+        width: 15.5rem;
+    }
+
+    .weatherCard:nth-child(2n + 1):hover::after{
+        left: 0;
+        right: auto;
+        transform: none;
+    }
+
+    .weatherCard:nth-child(2n):hover::after{
+        left: auto;
+        right: 0;
+        transform: none;
+    }
+
+    .weatherCard:last-child:hover::after{
+        left: auto;
+        right: auto;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .titleBox{
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+
+    .listStyle {
+        gap: 0;
+    }
+
+    .weatherCard {
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .controlButtons {
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 287px) {
+    .weatherCard:nth-child(n):hover::after{
+        left: auto;
+        right: auto;
+        transform: none;
+    }
+}
