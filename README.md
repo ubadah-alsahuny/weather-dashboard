@@ -27,7 +27,7 @@ During the development of the website, I went through a lot of hardships in API 
 ### 📌 Data Fetching from a Remote Public API:  
 It sounds easy, and is easy! I just haven't put my hands on this concept enough, which always gets me to forget how it all works out. But, I am now more familiar with UseEffect in React, and can confidently say that it is above 50% covered in my brain.  
 
-### 🖌 Responsive Design Scalability:  
+### 🖌 Responsive Design Core Principles:  
 I have done multiple reponsive pages throughout my programming journy, but this time was different as I used Pseudo Elements in CSS (after, and before), which added a lot of life and modernity to the final product. Plus, it tought how to make these elements reponsive in different environments.  
 
 ## 🏗 How Can It Be Improved?  
