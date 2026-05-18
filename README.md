@@ -4,13 +4,15 @@ I built this project as a continuation of my Hands-On-Practice journey; in where
 
 ## 📦 Technologies
 > React  
-> TypeScript    
+> TypeScript
+> Meteocons. Animated Weather Icons (https://github.com/basmilius/meteocons)
 
 ## ✨ Features
 Here is what Weather Dashboard has to offer for the user:
 - Simple Weather Condition Information: The user can easily view the entire week's (day and night) weather conditions displayed in simple terms and visuals.  
 * Detailed Weather Condition Information: Another option is the ability to view a more detailed forecast of a certain day of the week only by hovering over its weather card, which will display a Square of Information containing them.  
-+ User Comfort with Measurments Units: As fetched from the API, the weather temperature is arriving in Fahrenheit. However, not all users may be comfortable or common with this measurment unit; that's why the addition of a button that transforms the temperature value from Fahrenheit to Celsius got added.  
++ User Comfort with Measurments Units: As fetched from the API, the weather temperature is arriving in Fahrenheit. However, not all users may be comfortable or common with this measurment unit; that's why the addition of a button that transforms the temperature value from Fahrenheit to Celsius got added.
+- Responsive Design: The website works on any reolution of any device with no downgrades in functionality or smoothness.  
 
 ## 👨🏽‍🍳 The Process
 First, I started brainstorming and looking for aesthetically pleasing designs over the internet for similar applications. I started noting down noticable features that can a user go "Wow! This app looks good".  
@@ -35,8 +37,9 @@ Becuase I never fully understood backend fetches and always were in a lost state
 Throughout my reserach for the best design and UIs for a user, I came across a lot of desgins that use Glass Effect to make it look better. And because I am freshman in the field of Flutter development, I didn't know how to achieve such thing, but with the correct searches, I was able to achieve that in my pages, such as, (Sign in, and Login).  
 
 ## 🏗 How Can It Be Improved?  
-- Adding a Dark Theme.  
-* A built-in recommendation system based on what the user's search history.  
+- Adding a Light Theme, or a theme change when switching between daytime and nighttime forecasts.  
+* More detailed information about the weather, such as (Wind, Propability of rain, etc...).
++ A menu of fields to change the area or place that its weather needs to be fetched.  
 
-## 🖼 Images of Website:  
+## 🖼 Image of Website:  
 <img width="1366" height="768" alt="weather-dashboard-website" src="https://github.com/user-attachments/assets/3d9b80b3-111f-40c5-a2b5-d9b57b4fba50" />
