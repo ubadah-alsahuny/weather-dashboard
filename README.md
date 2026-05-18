@@ -39,6 +39,7 @@ Throughout my reserach for the best design and UIs for a user, I came across a l
 * A built-in recommendation system based on what the user's search history.  
 
 ## 🖼 Images of Website:  
+<img width="1366" height="768" alt="weather-dashboard-website" src="https://github.com/user-attachments/assets/3d9b80b3-111f-40c5-a2b5-d9b57b4fba50" />
 
 
 https://github.com/user-attachments/assets/b60433ec-45ea-4093-96bc-adbcb1d9f9ae
