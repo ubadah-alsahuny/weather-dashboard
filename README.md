@@ -5,7 +5,7 @@ I built this project as a continuation of my Hands-On-Practice journey; in where
 ## 📦 Technologies
 > React  
 > TypeScript  
-> Meteocons. Animated Weather Icons (https://github.com/basmilius/meteocons)  
+> [Meteocons. Animated Weather Icons](https://github.com/basmilius/meteocons)  
 
 ## ✨ Features
 Here is what Weather Dashboard has to offer for the user:
@@ -28,7 +28,10 @@ During the development of the website, I went through a lot of hardships in API 
 It sounds easy, and is easy! I just haven't put my hands on this concept enough, which always gets me to forget how it all works out. But, I am now more familiar with UseEffect in React, and can confidently say that it is above 50% covered in my brain.  
 
 ### 🖌 Responsive Design Core Principles:  
-I have done multiple reponsive pages throughout my programming journy, but this time was different as I used Pseudo Elements in CSS (after, and before), which added a lot of life and modernity to the final product. Plus, it tought how to make these elements reponsive in different environments.  
+I have done multiple reponsive pages throughout my programming journy, but this time was different as I used Pseudo Elements in CSS (after, and before), which added a lot of life and modernity to the final product. Plus, it tought how to make these elements reponsive in different environments. 
+
+### 🧼 Data Filtering:  
+The API that I was using didn't have a direct field indicating the weather is short words, such as (Sunny, Cloudy, Rainy, etc...), but had a fields called shortForecast, that had keywords on how the weather will be throughout the day. I took these keywords and put them inside a function of testing the whole sentence to detect them using the ```.includes``` function, and returned the keyword as a response from the function to display the right icon.
 
 ## 🏗 How Can It Be Improved?  
 - Adding a Light Theme, or a theme change when switching between daytime and nighttime forecasts.  
