@@ -4,8 +4,8 @@ I built this project as a continuation of my Hands-On-Practice journey; in where
 
 ## 📦 Technologies
 > React  
-> TypeScript
-> Meteocons. Animated Weather Icons (https://github.com/basmilius/meteocons)
+> TypeScript  
+> Meteocons. Animated Weather Icons (https://github.com/basmilius/meteocons)  
 
 ## ✨ Features
 Here is what Weather Dashboard has to offer for the user:
